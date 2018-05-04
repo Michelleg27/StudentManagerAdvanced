@@ -1,5 +1,13 @@
 #include "student.h"
-
+/*
+student::student()
+{
+    result = studentGrade; 
+    firstName = " ";
+    lastName = " ";
+    studentGrade = 0; 
+}
+*/
 void student::setName(string name1, string name2)
 {
     first = name1; 
@@ -20,17 +28,15 @@ double student::addGrade(double result)
 }
 double student::getScore()
 {
-    double total = 0; 
+    double totalAverage = 0; 
     double sum = 0; 
-    double value; 
-    for(int value = 0; value < listOfGrades.size(); value++)
+    for(int i = 0; i < listOfGrades.size(); i++)
     {
         
-       sum += value;  
-        value++; 
+       sum+= listOfGrades[i];
     }
-    total = sum / value; 
-    return total; 
+    totalAverage = sum / listOfGrades.size(); 
+    return totalAverage; 
 
         
 
