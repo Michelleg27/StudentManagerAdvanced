@@ -35,8 +35,8 @@ double student::getScore()
         
        sum+= listOfGrades[i];
     }
-    totalAverage = sum / listOfGrades.size(); 
-    return totalAverage; 
+   // totalAverage = sum / listOfGrades.size(); 
+   // return totalAverage; 
 
         
 
